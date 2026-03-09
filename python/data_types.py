@@ -1,7 +1,7 @@
 '''
 this is my first python script
 developer: damc
-description: this script let us understand hoe to is data types.
+description: this script let us understand how to is data types.
 '''
 print("hello everyone. welcome to data types")
 

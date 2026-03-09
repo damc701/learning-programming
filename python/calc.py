@@ -1,7 +1,7 @@
 #dev:damc
 '''
-script description:
-basic calc v1.0
+   script description:
+   basic calc v1.0
 '''
 num1 = 10
 num2 = 5
