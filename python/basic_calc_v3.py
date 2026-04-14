@@ -38,3 +38,13 @@ if (opt == 5):
     print(f"average is: {avg}")
 
 if (opt == 6):
+    add = n1 + n2 
+    subs = n1 - n2
+    mult = n1 * n2
+    div = n1 / n2 
+    avg = (n1 + n2) / 2
+    print(f"addition is: {add}")
+    print(f"sustraciion is: {subs}")
+    print(f"multiplication is: {mult}")
+    print(f"divition is: {div}")
+    print(f"average is: {avg}")
