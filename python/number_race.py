@@ -34,6 +34,7 @@ def play():
 
     # Variables
     places = [0] * players
+    places2 = [0] * players
     consecutive = [0] * players
     winner = False
 
@@ -41,19 +42,15 @@ def play():
     while not winner:
         for p in range(players):
             os.system('cls')
-            print("#######################")
-            print("##### NUMBER RACE #####")
-            print("#######################")
+            print("#######################\n##### NUMBER RACE #####\n#######################")
             print(f"\n### PLAYER {p+1} TURN ### ")
             dc1, dc2, addicion = draw_dices()
             print(f"\n      ::::dices:::: \n\n{dc1} and {dc2} (addicion: {addicion})\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
             places[p] += addicion
-            if 1>p<2:
-                print(f"\n   player 1 position is: {places[p]}")
-                print(f"\n   player 2 position is: {places[p+1]}")
-            else:
-                print(f"\n   player 1 position is: {places[p-1]}")
-                print(f"\n   player 2 position is: {places[p]}")
+            s=0
+            for s in range(players):
+                        print(f"\n   player 1 position is: {places[s]}")
+                        print(f"\n   player 2 position is: {places[s]}")
             # win by finish the line
             if places[p] >= meta:
                 print(f"\n!!!!! PLAYER {p+1} WON BY FINISH THE LINE !!!!!")
